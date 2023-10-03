@@ -1,0 +1,51 @@
+// buildscript {} 블록은 plugins {} 블록 이전에 위치해야 합니다.
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'org.springframework.boot:spring-boot-gradle-plugin:2.5.4'
+        // 다른 의존성들...
+    }
+}
+
+// plugins {} 블록은 buildscript {} 블록 이후에 위치해야 합니다.
+plugins {
+    id 'org.springframework.boot' version '2.5.4'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11 // or VERSION_1_8
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly 'org.projectlombok:lombok:1.18.20'
+    annotationProcessor 'org.projectlombok:lombok:1.18.20'
+    implementation 'org.springframework.boot:spring-boot-starter'
+
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+
+    implementation group: "mysql", name: "mysql-connector-java", version: "8.0.+"
+
+    implementation group: "org.springframework.boot", name: "spring-boot-starter-data-jpa"
+    implementation group: "org.springframework.boot", name: "spring-boot-starter-web"
+
+    implementation group: "junit", name:"junit", version:"4.+"
+
+    testImplementation('org.springframework.boot:spring-boot-starter-test') {
+        exclude group:'com.vaadin.external.google', module:'android-json'
+    }
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}

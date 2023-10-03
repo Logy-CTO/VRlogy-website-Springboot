@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="HTML5 Template, eSports, Gaming, Bootstrap4, Responsive" />
+    <meta name="description" content="Logy - eSports & Gaming HTML Template" />
+    <title>Logy - SignUp</title>
+    <!--font-awesome icons link-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/venobox.css">
+    <!--main style file-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body id="darkmode">
+
+    <!-- preloader part start -->
+    <div class="loader_screen preloader" id="preloader">
+        <div class="loader loader-box">
+            <svg viewBox="0 0 80 80">
+                <rect x="8" y="8" width="64" height="64"></rect>
+            </svg>
+        </div>
+    </div>
+    <!-- preloader part start -->
+
+    <!-- Login start -->
+    <div class="login-12">
+        <div class="container">
+            <div class="col-md-12 pad-0">
+                <div class="row login-box-12">
+                    <div class="col-lg-7 col-sm-12 col-pad-0 align-self-center">
+                        <div class="login-inner-form">
+                            <div class="details">
+                                <h3>Sign Up</h3>
+                                <form autocomplete="off">
+                                    <div class="form-group">
+                                        <input type="email" id="signUpEmail" name="username" class="input-text" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" id="signUpPassword" name="Password" class="input-text" placeholder="Password">
+                                    </div>
+                                    <div class= "form-group"> 
+                                        <input type= "password" id= "confirmPassword" name= "confirmPassword" class="input-text" placeholder= "Confirm Password"/> 
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" id="signUpButton" class="btn-md btn-theme btn-block">Free Signup</button>
+                                    </div>
+                                </form>
+                                <p>Already have an account?<a href="login.html"> Login Now</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 col-sm-12 col-pad-0 bg-img align-self-center none-992">
+                        <a href="index.html" class="logoss">
+                            Logy<span>.</span>
+                        </a>
+                        <p>Step into the Future with logy: Elevating Reality through VR Treadmills and Software Solutions</p>
+                        <ul class="social-list clearfix">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Login end -->
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js";
+    import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-auth.js";
+    
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyAAprUb4UC4yZUtcYoLswQwBpKTP2trgWE",
+        authDomain: "vrlogy-d176a.firebaseapp.com",
+        projectId: "vrlogy-d176a",
+        storageBucket: "vrlogy-d176a.appspot.com",
+        messagingSenderId: "715901168367",
+        appId: "1:715901168367:web:7696cbd2ccc4db73ba091a",
+        measurementId: "G-FZ04CB5YRC"
+    };
+    
+    // Initialize Firebase
+
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+
+    document.getElementById('signUpButton').addEventListener('click', (event) => {
+        event.preventDefault();
+        const email = document.getElementById('signUpEmail').value;
+        const password = document.getElementById('signUpPassword').value;
+        const confirmPassword = document.getElementById('confirmPassword').value;
+
+        if (password !== confirmPassword) {
+            alert("비밀번호와 비밀번호 확인이 일치하지 않습니다.");
+            return;
+        }
+
+        const auth = getAuth();
+
+        createUserWithEmailAndPassword(auth, email, password)
+				.then((userCredential) => {
+					console.log(userCredential);
+					// Signed in 
+					const user = userCredential.user;
+					window.location.href = "index.html"; // 회원가입 성공 시 메인 페이지로 리디렉션
+					// ...
+				})
+				.catch((error) => {
+					console.log(error);
+					
+					if (error.code === 'auth/weak-password') { // 약한 비밀번호 오류 처리
+						alert("비밀번호는 최소 6자 이상이어야 합니다.");
+						return;
+					}
+					
+					alert("회원가입에 실패했습니다."); // 기타 오류 처리
+				});
+        });
+    </script>
+
+
+<!-- Optional JavaScript -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/venobox.min.js"></script>
+<script src="js/counterup.min.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+
+</html>
