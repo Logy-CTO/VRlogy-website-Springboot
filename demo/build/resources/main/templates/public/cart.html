@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="HTML5 Template, eSports, Gaming, Tournament, Landing, Page, SEO" />
+    <meta name="description" content="Logy - eSports & Gaming HTML5 Template" />
+    <title>Logy - Cart</title>
+
+    <!--font-awesome icons link-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/venobox.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <!--main style file-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body id="darkmode" class="inner-page">
+    <!-- Preloader -->
+    <div class="loader_screen preloader" id="preloader">
+        <div class="loader loader-box">
+            <svg viewBox="0 0 80 80">
+                <rect x="8" y="8" width="64" height="64"></rect>
+            </svg>
+        </div>
+    </div>
+    <!-- Preloader -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cart <b>.</b></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- 여기가 상품 정보가 들어갈 곳입니다 -->
+                <div class="modal-body">
+
+                </div>
+
+                <!-- 생략 -->
+                <div class="modal-footer">
+                    <a href="cart.html" class="main-btn model-btn">Checkout $320</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contact-model-large" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">
+                        <h5 class="modal-title">Contact <b>.</b></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row contact-box">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Full Name">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Your Email Address">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="7" placeholder="Your Message"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="main-btn model-btn">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Billing Modal -->
+    <div class="modal fade" id="billing-model-large" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">
+                        <h5 class="modal-title">Billing Details <b>.</b></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row contact-box">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Full Name">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Your Email Address">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Phone Number">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Card Number">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Expiry Date">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Address">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="main-btn model-btn">Payment $298</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+
+    <!-- HEADER AREA START -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="navber">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Logy<span>.</span></a>
+            <div class="menu-main" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto menu-item">
+                    <li class="nav-item">
+                        <a class="nav-link nl-m-top abc mobile-content-hide"><i class="fa fa-search" aria-hidden="true"></i></a>
+                        <div class="search top-search">
+                            <button type="button" class="close fix-close">×</button>
+                            <form>
+                                <input type="search" value="" placeholder="Search Here" />
+                                <button type="submit" class="btn btn-primary">Search</button>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link cart nl-m-top mobile-content-hide" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-shopping-bag" aria-hidden="true"></i><span>2</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nl-m-top account-icon" href="login.html"><i class="fa fa-user" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="custom-menubar">
+            <ul class="nav-link-block">
+                <li>
+                    <a href="index.html#banner" class="menu-link">Home</a>
+                </li>
+                <li>
+                    <a href="index.html#about" class="menu-link">About Us</a>
+                </li>
+                <li>
+                    <a href="index.html#match" class="menu-link">Matches</a>
+                </li>
+                <li>
+                    <a class="menu-link" data-toggle="modal" data-target="#contact-model-large">Contact</a>
+                </li>
+                <li>
+                    <a href="index.html#blog" class="menu-link">Blogs</a>
+                </li>
+            </ul>
+            <ul class="responsive-nav">
+                <li>
+                    <a class="nav-link nl-m-top abc"><i class="fa fa-search" aria-hidden="true"></i></a>
+                    <div class="search top-search">
+                        <button type="button" class="close fix-close">×</button>
+                        <form>
+                            <input type="search" value="" placeholder="Search Here" />
+                            <button type="submit" class="btn btn-primary">Search</button>
+                        </form>
+                    </div>
+                </li>
+                <li>
+                    <a class="nav-link cart nl-m-top" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-shopping-bag" aria-hidden="true"></i><span>2</span></a>
+                </li>
+                <li>
+                    <a class="nav-link nl-m-top" href="login.html"><i class="fa fa-user" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+            <div class="menu-close">
+                <a class="hide-menu-btn"><i class="fa fa-times" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!-- HEADER AREA END -->
+
+    <!-- INNER_PAGE_BANNER AREA START -->
+    <section id="inner-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3>Cart Page</h3>
+                    <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a><span> - Cart page</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- INNER_PAGE_BANNER AREA END -->
+
+    <!-- CART_VIEW AREA START -->
+    <section id="cart-view">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="row">
+                    </div>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-5 contact-box">
+                    <div class="checkout-box">
+                        <div class="row">
+                            <div class="col-lg-12 checkout-item">
+                                <div class="row">
+                                    <div class="col-8 col-lg-8 col-sm-8">
+                                        <h3>Subtotal</h3>
+                                   </div>
+                                   <div class="col-4 col-lg-4 col-sm-4 text-right">
+                                        <h4 id="subtotal-value">$0.00</h4>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 checkout-item">
+                                <div class="row">
+                                    <div class="col-8 col-lg-8 col-sm-8">
+                                        <h3>Discount</h3>
+                                    </div>
+                                    <div class="col-4 col-lg-4 col-sm-4 text-right">
+                                        <h4>0%</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 checkout-item">
+                                <div class="row">
+                                    <div class="col-8 col-lg-8 col-sm-8">
+                                        <h3>Total</h3>
+                                   </div>
+                                   <div class="col-4 col-lg-4 col-sm-4 text-right">
+                                        <h4 id="total-value">$0.00</h4>
+                                   </div>
+                                   
+                                </div>
+                            </div>
+                            <div class="col-lg-12 checkout-button">
+                                <a class="main-btn btn-c-white" data-toggle="modal" data-target="#billing-model-large">Make Payment</a>
+                            </div>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <input type="text" class="form-control" placeholder="Coupon Code">
+                                </div>
+                                <div class="col-lg-4">
+                                    <button type="submit" id="download" class="coupon-btn btn btn-primary">Apply</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CART_VIEW AREA END -->
+
+    <!-- PRODUCT AREA START -->
+    <section id="product">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 heading">
+                    <h3>Related</h3>
+                </div>
+            </div>
+            <div class="row product-pa">
+                <div class="col-lg-12">
+                    <div class="product-main">
+                        <div class="col-lg-3 text-center">
+                            <div class="product-item">
+                                <h3>$9.8</h3>
+                                <img src="images/KakaoTalk_Photo_2023-09-07-23-39-23.png" alt="product-img" class="img-fluid">
+                                <h4>VRlogy Program</h4>
+                                <a href="#" class="product-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 text-center">
+                            <div class="product-item">
+                                <h3>$439</h3>
+                                <div class="sale">
+                                    <span>Sale</span>
+                                </div>
+                                <img src="images/KATWALKC2.jpg" alt="product-img" class="img-fluid">
+                                <h4>VRlogy treadmill</h4>
+                                <a href="#" class="product-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 text-center">
+                            <div class="product-item">
+                                <h3>$299</h3>
+                                <img src="images/30612946625.20230130153345.jpg" alt="product-img" class="img-fluid">
+                                <h4>Oculus Quest 2</h4>
+                                <a href="#" class="product-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 text-center">
+                            <div class="product-item">
+                                <h3>$458</h3>
+                                <div class="sale">
+                                    <span>Sale</span>
+                                </div>
+                                <img src="images/35059704619.20221216134925.jpg" alt="product-img" class="img-fluid">
+                                <h4>PICO 4</h4>
+                                <a href="#" class="product-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 text-center">
+                            <div class="product-item">
+                                <h3>$47</h3>
+                                <img src="images/16646684053.20181217180044.jpg" alt="product-img" class="img-fluid">
+                                <h4>C920 PRO</h4>
+                                <a href="#" class="product-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PRODUCT AREA END -->
+
+    <!-- SUBSCRIBE AREA START -->
+
+    <!-- SUBSCRIBE AREA END -->
+
+    <!-- FOOTER AREA START -->
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 footer-logo">
+                    <a href="index.html">Logy<b>.</b></a>
+                    <p>Step into the Future with logy: Elevating Reality through VR Treadmills and Software Solutions</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fa fa-twitch" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-4 footer-menu">
+                    <h3>Site Menu</h3>
+                    <a href="#">Home</a>
+                    <a href="#">Tournaments</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Reviews</a>
+                </div>
+                <div class="col-lg-2 col-sm-4 footer-menu">
+                    <h3>Useful Links</h3>
+                    <a href="#">Create Account</a>
+                    <a href="#">Subscription</a>
+                    <a href="#">Affiliate</a>
+                    <a href="#">Site Condition</a>
+                </div>
+                <div class="col-lg-2 col-sm-4 footer-menu">
+                    <h3>Information</h3>
+                    <a href="#">FAQ</a>
+                    <a href="#">Site Maps</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER AREA END -->
+
+    <!-- COPY_RIGHT AREA START -->
+    <section id="copy_right">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-7 copy-right-txt">
+                            <p><i class="fa fa-copyright" aria-hidden="true"></i> 2021-2030 - Developed by <a href="#">Logy Team.</a></p>
+                        </div>
+                        <div class="col-lg-6 col-sm-5 text-right copy-right-txt">
+                            <p>All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- COPY_RIGHT AREA END -->
+    <script>
+        document.getElementById("download").addEventListener("click", function() {
+            window.open("https://github.com/ju1ce/Mediapipe-VR-Fullbody-Tracking/archive/refs/tags/v0.6.zip");
+        });
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    
+        <!-- JavaScript -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/venobox.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/ytplayer-plugin.js"></script> 
+    <!-- 이렇게 ytplayer-plugin.js를 다른 스크립트 파일들 뒤에 위치시키세요. -->
+
+
+
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+        apiKey: "AIzaSyAAprUb4UC4yZUtcYoLswQwBpKTP2trgWE",
+        authDomain: "vrlogy-d176a.firebaseapp.com",
+        projectId: "vrlogy-d176a",
+        storageBucket: "vrlogy-d176a.appspot.com",
+        messagingSenderId: "715901168367",
+        appId: "1:715901168367:web:7696cbd2ccc4db73ba091a",
+        measurementId: "G-FZ04CB5YRC"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        
+        // Get a reference to the database service
+        var database = firebase.database();
+
+        function createCartItemElement(item, id) {
+        // 상품 정보가 담긴 div 생성
+        var itemDiv = document.createElement('div');
+        itemDiv.className = 'col-lg-6 col-sm-6';
+
+        // 이미지 div 생성
+        var imgDiv = document.createElement('div');
+        imgDiv.className = 'col-sm-4 col-lg-4 cart-img';
+        var otherItemDiv = document.createElement('div');
+        otherItemDiv.className = 'col-lg-4 col-sm-6';
+
+        // 이미지 태그 생성
+        var imgTag = document.createElement('img');
+        imgTag.src = item.imgSrc;
+        imgTag.alt = 'product';
+        imgTag.className = 'img-fluid';
+
+        // 삭제 아이콘 생성
+        var aTagDeleteIcon=document.createElement("a");
+        aTagDeleteIcon.href="#";
+        
+        var iDeleteIcon=document.createElement("i");
+        iDeleteIcon.className="fa fa-trash";
+        
+        aTagDeleteIcon.appendChild(iDeleteIcon);
+
+        // append image and delete icon to the image div.
+        imgDiv.appendChild(imgTag);
+        imgDiv.appendChild(aTagDeleteIcon);
+
+        // 상품 설명 div 생성 
+        var descDiv=document.createElement("div");
+        descDiv.className='col-sm-8 col-lg-8';
+
+        // 상품 이름 h3 태그 생성 
+        var h3TagName=document.createElement("h3");
+        h3TagName.innerText=item.name;
+
+        // 가격 span 태그 생성 
+        var spanPrice=document.createElement("span");
+
+
+        spanPrice.innerText=`${item.price}`;
+
+        descDiv.appendChild(h3TagName);
+        descDiv.appendChild(spanPrice);
+
+
+        itemDiv.appendChild(imgDiv);
+        itemDiv.appendChild(descDiv);
+        
+
+        aTagDeleteIcon.addEventListener('click', function(e) {
+            e.preventDefault();
+            database.ref('/users/' + userId + '/cart/' + productId).remove().then(function() {
+                itemDiv.remove();
+            }).catch(function(error) {
+                console.log('Remove failed:' + error.message)
+            });
+        });
+
+        return itemDiv;
+        }
+
+        $(document).ready(function() {
+
+                $('.product-btn').click(function(e) {
+
+                    e.preventDefault();
+
+                    var user = firebase.auth().currentUser;
+
+                    if (user == null) { 
+                    alert("로그인 해주세요.");
+                    return;
+                    }
+
+                    var productPrice = $(this).siblings('h3').text();
+                    var productImgSrc = $(this).siblings('img').attr('src');
+                    var productName = $(this).siblings('h4').text();
+
+                    var userId = user.uid; // 현재 로그인한 사용자 ID로 변경해야 합니다.
+                    var productId = productName; // 상품의 고유 ID로 변경해야 합니다.
+
+                    var productData = {
+                        name: productName,
+                        price: productPrice,
+                        imgSrc: productImgSrc
+                    };
+
+                    var updates = {};
+                    updates['/users/' + userId + '/cart/' + productId] = productData;
+
+                    return database.ref().update(updates)
+                        .then(() => {
+                            if (confirm("성공적으로 장바구니에 넣었습니다. 장바구니로 이동하시겠습니까?")) {
+                                window.location.href="cart.html";
+                            }
+                        });
+                });
+
+                firebase.auth().onAuthStateChanged(function(user) {
+                if (user) {
+                    // User is signed in.
+                    database.ref('/users/' + user.uid + '/cart').once('value').then(function(snapshot) {
+
+                        var cartItems = snapshot.val();
+
+                        for(var productId in cartItems){
+                            var element=createCartItemElement(cartItems[productId], user.uid, productId);
+                            document.querySelector('.modal-body').appendChild(element);
+                        }
+                    });
+                } else {
+                    // No user is signed in.
+                }
+            });
+            });
+        firebase.auth().onAuthStateChanged(function(user) {
+            if (user) {
+                // User is signed in.
+                console.log("User is signed in with email: ", user.email);
+            } else {
+                // No user is signed in.
+                console.log("No user is signed in.");
+            }
+            });
+
+        firebase.auth().onAuthStateChanged(function(user) {
+            if (user) {
+                // User is signed in.
+                database.ref('/users/' + user.uid + '/cart').on('value', function(snapshot) {
+
+                    var cartItems = snapshot.val();
+                    var itemCount = 0;
+
+                    for(var productId in cartItems){
+                        itemCount++;
+                    }
+
+                    // Update the item count on the icon
+                    $('.nav-link.cart span').text(itemCount);
+                });
+            } else {
+                // No user is signed in.
+            }
+        });
+
+        firebase.auth().onAuthStateChanged(function(user) {
+            if (user) {
+                // User is signed in.
+                database.ref('/users/' + user.uid + '/cart').on('value', function(snapshot) {
+
+                    var cartItems = snapshot.val();
+                    var totalCost = 0;
+
+                    for(var productId in cartItems){
+                        totalCost += parseFloat(cartItems[productId].price.replace('$', ''));
+                    }
+                    // Update the total cost on the checkout button
+                    $('.modal-footer a.main-btn.model-btn').text('Checkout $' + totalCost);
+                });
+            } else {
+                // No user is signed in.
+            }
+        });
+        firebase.auth().onAuthStateChanged(function(user) {
+        if (user) {
+            // User is signed in.
+            database.ref('/users/' + user.uid + '/cart').once('value').then(function(snapshot) {
+
+                var cartItems = snapshot.val();
+                var cartArea = document.querySelector('#cart-view .row');
+
+                for(var productId in cartItems){
+                    var itemDiv = document.createElement('div');
+                    itemDiv.className = 'col-lg-6 col-sm-6';
+
+                    var cartItemDiv = document.createElement('div');
+                    cartItemDiv.className = 'cart-items text-center';
+
+                    var h3TagPrice=document.createElement("h3");
+                    h3TagPrice.innerText=`${cartItems[productId].price}`;
+
+                    var imgTagProduct=document.createElement("img");
+                    imgTagProduct.style.width='215px';
+                    imgTagProduct.style.height='201px';
+
+                    imgTagProduct.src=cartItems[productId].imgSrc;
+                    imgTagProduct.alt="product-img";
+                    
+                    imgTagProduct.className="img-fluid";
+
+                    
+                    var h4TagName=document.createElement("h4");
+                    h4TagName.innerText=cartItems[productId].name;
+
+                    
+                    // 삭제 아이콘 생성
+                    var aTagDeleteIcon=document.createElement("a");
+                    aTagDeleteIcon.href="#";
+                    
+                    var iDeleteIcon=document.createElement("i");
+                    iDeleteIcon.className="fa fa-times";
+                    
+                    aTagDeleteIcon.appendChild(iDeleteIcon);
+                    
+
+                    // append elements to the div
+                    cartItemDiv.appendChild(h3TagPrice);
+                    cartItemDiv.appendChild(imgTagProduct);
+                    cartItemDiv.appendChild(h4TagName);
+                    cartItemDiv.appendChild(aTagDeleteIcon);
+
+                    
+                    
+                itemDiv.appendChild(cartItemDiv);
+
+                aTagDeleteIcon.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    database.ref('/users/' + user.uid + '/cart/' + productId).remove().then(function() {
+                        itemDiv.remove();
+                    }).catch(function(error) {
+                        console.log('Remove failed:' + error.message)
+                    });
+                });
+
+                
+               
+               // append the div to the row
+             
+
+              if (document.querySelector('.col-lg-6') != null){
+                    document.querySelector('.col-lg-6').remove(); 
+              }
+              
+              // Append new product div to the row.
+              cartArea.prepend(itemDiv); 
+
+                }
+            });
+        } else {
+            // No user is signed in.
+        }
+    });
+    // 페이지 로드 시 초기값 설정 및 업데이트 함수 호출
+    document.addEventListener('DOMContentLoaded', function() {
+    updateSubtotalAndTotal();
+    });
+
+    function updateSubtotalAndTotal() {
+    var user = firebase.auth().currentUser;
+
+    if (user) {
+        var userId = user.uid;
+
+        // 제품 정보 가져오기
+        database.ref('/users/' + userId + '/cart').once('value').then(function(snapshot) {
+        var cartItems = snapshot.val();
+        var subtotal = 0;
+
+        for (var productId in cartItems) {
+            var price = parseFloat(cartItems[productId].price.replace('$', ''));
+            subtotal += price;
+        }
+
+        // discount 값 설정 (여기서는 100%로 고정)
+        var discount = 1;
+
+        // total 값 계산
+        var total = subtotal * discount;
+
+        // 계산된 subtotal 및 total 값을 화면에 출력
+        document.querySelector('#subtotal-value').innerText =
+            '$' + subtotal.toFixed(2);
+        document.querySelector('#total-value').innerText =
+            '$' + total.toFixed(2);
+        }).catch(function(error) {
+        console.log(error);
+        });
+    }
+    }
+
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+        
+        // Get a reference to the database service
+        var database = firebase.database();
+
+        function createCartItemElement(item, id) {
+        // 상품 정보가 담긴 div 생성
+        var itemDiv = document.createElement('div');
+        itemDiv.className = 'row cart-item';
+
+        // 이미지 div 생성
+        var imgDiv = document.createElement('div');
+        imgDiv.className = 'col-sm-4 col-lg-4 cart-img';
+
+        // 이미지 태그 생성
+        var imgTag = document.createElement('img');
+        imgTag.src = item.imgSrc;
+        imgTag.alt = 'product';
+        imgTag.className = 'img-fluid';
+
+        // 삭제 아이콘 생성
+        var aTagDeleteIcon=document.createElement("a");
+        aTagDeleteIcon.href="#";
+        
+        var iDeleteIcon=document.createElement("i");
+        iDeleteIcon.className="fa fa-trash";
+        
+        aTagDeleteIcon.appendChild(iDeleteIcon);
+
+        // append image and delete icon to the image div.
+        imgDiv.appendChild(imgTag);
+        imgDiv.appendChild(aTagDeleteIcon);
+
+        // 상품 설명 div 생성 
+        var descDiv=document.createElement("div");
+        descDiv.className='col-sm-8 col-lg-8';
+
+        // 상품 이름 h3 태그 생성 
+        var h3TagName=document.createElement("h3");
+        h3TagName.innerText=item.name;
+
+        // 가격 span 태그 생성 
+        var spanPrice=document.createElement("span");
+
+
+        spanPrice.innerText=`${item.price}`;
+
+        descDiv.appendChild(h3TagName);
+        descDiv.appendChild(spanPrice);
+
+
+        itemDiv.appendChild(imgDiv);
+        itemDiv.appendChild(descDiv);
+        
+
+        aTagDeleteIcon.addEventListener('click', function(e) {
+            e.preventDefault();
+            database.ref('/users/' + userId + '/cart/' + productId).remove().then(function() {
+                itemDiv.remove();
+            }).catch(function(error) {
+                console.log('Remove failed:' + error.message)
+            });
+        });
+
+        return itemDiv;
+        }
+
+    </script>
+    <!-- JavaScript -->
+
+
+
+</body>
+
+</html>

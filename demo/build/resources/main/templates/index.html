@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="HTML5 Template, eSports, Gaming, Tournament, Landing, Page, SEO" />
+    <meta name="description" content="Logy - eSports & Gaming HTML5 Template" />
+    <title>Logy</title>
+
+    <!--font-awesome icons link-->
+    <link rel="stylesheet" href="/font-awesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/slick.css">
+    <link rel="stylesheet" href="/css/venobox.css">
+    <link rel="stylesheet" href="/css/lightbox.min.css">
+    <!--main style file-->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+</head>
+
+<body id="darkmode">
+    <!-- Preloader -->
+    <div class="loader_screen preloader" id="preloader">
+        <div class="loader loader-box">
+            <svg viewBox="0 0 80 80">
+                <rect x="8" y="8" width="64" height="64"></rect>
+            </svg>
+        </div>
+    </div>
+    <!-- Preloader -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cart <b>.</b></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- 여기가 상품 정보가 들어갈 곳입니다 -->
+                <div class="modal-body">
+
+                </div>
+
+                <!-- 생략 -->
+                <div class="modal-footer">
+                    <a href="cart.html" class="main-btn model-btn">Checkout $320</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contact-model-large" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">
+                        <h5 class="modal-title">Contact <b>.</b></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row contact-box">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Full Name">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Your Email Address">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="7" placeholder="Your Message"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="main-btn model-btn">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+
+    <!-- HEADER AREA START -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="navber">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Logy<span>.</span></a>
+            <div class="menu-main" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto menu-item">
+                    <li class="nav-item">
+                        <a class="nav-link nl-m-top abc mobile-content-hide"><i class="fa fa-search" aria-hidden="true"></i></a>
+                        <div class="search top-search">
+                            <button type="button" class="close fix-close">×</button>
+                            <form>
+                                <input type="search" value="" placeholder="Search Here" />
+                                <button type="submit" class="btn btn-primary">Search</button>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link cart nl-m-top mobile-content-hide" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-shopping-bag" aria-hidden="true"></i><span>2</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nl-m-top account-icon" href="login.html"><i class="fa fa-user" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="custom-menubar">
+            <ul class="nav-link-block">
+                <li>
+                    <a href="#banner" class="menu-link">Home</a>
+                </li>
+                <li>
+                    <a class="menu-link" data-toggle="modal" data-target="#contact-model-large">Contact</a>
+                </li>
+            </ul>
+            <ul class="responsive-nav">
+                <li>
+                    <a class="nav-link nl-m-top abc"><i class="fa fa-search" aria-hidden="true"></i></a>
+                    <div class="search top-search">
+                        <button type="button" class="close fix-close">×</button>
+                        <form>
+                            <input type="search" value="" placeholder="Search Here" />
+                            <button type="submit" class="btn btn-primary">Search</button>
+                        </form>
+                    </div>
+                </li>
+                <li>
+                    <a class="nav-link cart nl-m-top" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-shopping-bag" aria-hidden="true"></i><span>2</span></a>
+                </li>
+                <li>
+                    <a class="nav-link nl-m-top" href="login.html"><i class="fa fa-user" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+            <div class="menu-close">
+                <a class="hide-menu-btn"><i class="fa fa-times" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!-- HEADER AREA END -->
+
+    <!-- BANNER AREA START -->
+    <section id="banner">
+        <div class="backtotop">
+            <a href="#banner"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+        </div>
+        <div class="follow-us">
+            <span>Follow us</span>
+            <a href="#"><i class="fa fa-twitch" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+        </div>
+        <div class="banner-arrow">
+            <i class="fa fa-angle-left arrow-al" aria-hidden="true"></i>
+            <i class="fa fa-angle-right arrow-ar" aria-hidden="true"></i>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-8 col-md-6 landscape-m-auto tab-m-auto banner-img">
+                    <img src="/images/banner1.png" alt="banner-img" class="img-fluid">
+                    <a class="vid-btn venobox" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=lWTFCPmjlAE&ab_channel=BeardoBenjo"><i class="fa fa-play" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-lg-5 m-auto banner-txt">
+                    <div class="banner-main">
+                        <div class="banner-item">
+                            <h3>Gaming</h3>
+                            <h3>Community</h3>
+                            <p>Step into the Future with logy: Elevating Reality through VR Treadmills and Software Solutions</p>
+                            <a href="login.html" class="main-btn">Join Community</a>
+                        </div>
+                        <div class="banner-item">
+                            <h3>Gaming</h3>
+                            <h3>Online Shop</h3>
+                            <p>Step into the Future with logy: Elevating Reality through VR Treadmills and Software Solutions</p>
+                            <a href="login.html" class="main-btn">Join Community</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BANNER AREA END -->
+
+    <!-- GAMES AREA START -->
+ 
+    <!-- GAMES AREA END -->
+
+    <!-- ABOUT AREA START -->
+    
+    <!-- BRAND AREA END -->
+
+    <!-- PLAYER AREA START -->
+   
+    <!-- PLAYER AREA END -->
+
+    <!-- PRODUCT AREA START -->
+    <section id="product">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 heading">
+                    <h3>Product</h3>
+                </div>
+            </div>
+            <div class="row product-pa">
+                <div class="col-lg-12">
+                    <div class="product-main">
+                        <div class="col-lg-3 text-center">
+                            <div class="product-item">
+                                <h3>$9.8</h3>
+                                <img src="/images/KakaoTalk_Photo_2023-09-07-23-39-23.png" alt="product-img" class="img-fluid">
+                                <h4>VRlogy Program</h4>
+                                <a href="#" class="product-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 text-center">
+                            <div class="product-item">
+                                <h3>$439</h3>
+                                <div class="sale">
+                                    <span>Sale</span>
+                                </div>
+                                <img src="/images/KATWALKC2.jpg" alt="product-img" class="img-fluid">
+                                <h4>VRlogy treadmill</h4>
+                                <a href="#" class="product-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 text-center">
+                            <div class="product-item">
+                                <h3>$299</h3>
+                                <img src="/images/30612946625.20230130153345.jpg" alt="product-img" class="img-fluid">
+                                <h4>Oculus Quest 2</h4>
+                                <a href="#" class="product-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 text-center">
+                            <div class="product-item">
+                                <h3>$458</h3>
+                                <div class="sale">
+                                    <span>Sale</span>
+                                </div>
+                                <img src="/images/35059704619.20221216134925.jpg" alt="product-img" class="img-fluid">
+                                <h4>PICO 4</h4>
+                                <a href="#" class="product-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 text-center">
+                            <div class="product-item">
+                                <h3>$47</h3>
+                                <img src="/images/16646684053.20181217180044.jpg" alt="product-img" class="img-fluid">
+                                <h4>C920 PRO</h4>
+                                <a href="#" class="product-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PRODUCT AREA END -->
+
+    <!-- JOIN AREA START -->
+
+    <!-- JOIN AREA END -->
+
+    <!-- BLOG AREA START -->
+    <section id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 heading">
+                    <h3>Blogs</h3>
+                </div>
+            </div>
+            <div class="row blog-pa">
+                <div class="col-lg-12">
+                    <div class="blog-main">
+                        <div class="col-lg-4 blog-item">
+                            <img src="/images/zuckerberg-quest-3-341x220.png" alt="blog-img" class="img-fluid">
+                            <div class="blog-txt">
+                                <span>24 min ago</span>
+                                <a href="#">Meta is Reportedly Partnering with LG to Create Apple Vision Pro Competitor</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 blog-item">
+                            <img src="/images/ea-wrc-341x220.png" alt="blog-img" class="img-fluid">
+                            <div class="blog-txt">
+                                <span>1 day ago</span>
+                                <a href="#">‘DiRT Rally’ Studio Announces ‘EA Sports WRC’, PC VR Support Coming Post-launch</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 blog-item">
+                            <img src="/images/border-bots-vr-341x220.png" alt="blog-img" class="img-fluid">
+                            <div class="blog-txt">
+                                <span>55 min ago</span>
+                                <a href="#">‘Border Bots’ is Like ‘Papers, Please’ for VR, Coming to SteamVR & PSVR 2 This Month</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 blog-item">
+                            <img src="/images/quest-3-341x220.png" alt="blog-img" class="img-fluid">
+                            <div class="blog-txt">
+                                <span>3 week ago</span>
+                                <a href="#">European Pricing for Quest 3 Accessories Allegedly Leaked</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="blog-arrow text-center">
+                        <i class="fa fa-angle-left arrow-al" aria-hidden="true"></i>
+                        <i class="fa fa-angle-right arrow-ar" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BLOG AREA END -->
+
+    <!-- SUBSCRIBE AREA START -->
+
+    <!-- SUBSCRIBE AREA END -->
+
+    <!-- FOOTER AREA START -->
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 footer-logo">
+                    <a href="index.html">Logy<b>.</b></a>
+                    <p>Step into the Future with logy: Elevating Reality through VR Treadmills and Software Solutions</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fa fa-twitch" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-4 footer-menu">
+                    <h3>Site Menu</h3>
+                    <a href="#">Home</a>
+                    <a href="#">Tournaments</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Reviews</a>
+                </div>
+                <div class="col-lg-2 col-sm-4 footer-menu">
+                    <h3>Useful Links</h3>
+                    <a href="#">Create Account</a>
+                    <a href="#">Subscription</a>
+                    <a href="#">Affiliate</a>
+                    <a href="#">Site Condition</a>
+                </div>
+                <div class="col-lg-2 col-sm-4 footer-menu">
+                    <h3>Information</h3>
+                    <a href="#">FAQ</a>
+                    <a href="#">Site Maps</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER AREA END -->
+
+    <!-- COPY_RIGHT AREA START -->
+    <section id="copy_right">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-7 copy-right-txt">
+                            <p><i class="fa fa-copyright" aria-hidden="true"></i> 2021-2030 - Developed by <a href="#">Logy Team.</a></p>
+                        </div>
+                        <div class="col-lg-6 col-sm-5 text-right copy-right-txt">
+                            <p>All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- COPY_RIGHT AREA END -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="path/to/ytplayer-plugin.js"></script>
+
+    <!-- JavaScript -->
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/slick.min.js"></script>
+    <script src="/js/venobox.min.js"></script>
+    <script src="/js/lightbox.min.js"></script>
+    <script src="/js/counterup.min.js"></script>
+    <script src="/js/waypoints.min.js"></script>
+    <script src="/js/custom.js"></script>
+
+</body>
+
+</html>
