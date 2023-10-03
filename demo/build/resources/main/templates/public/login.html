@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="HTML5 Template, eSports, Gaming, Bootstrap4, Responsive" />
+    <meta name="description" content="Logy - eSports & Gaming HTML Template" />
+    <title>Logy - Login</title>
+    <!--font-awesome icons link-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/venobox.css">
+    <!--main style file-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body id="darkmode">
+
+    <!-- preloader part start -->
+    <div class="loader_screen preloader" id="preloader">
+        <div class="loader loader-box">
+            <svg viewBox="0 0 80 80">
+                <rect x="8" y="8" width="64" height="64"></rect>
+            </svg>
+        </div>
+    </div>
+    <!-- preloader part start -->
+
+    <!-- Login start -->
+    <div class="login-12">
+        <div class="container">
+            <div class="col-md-12 pad-0">
+                <div class="row login-box-12">
+                    <div class="col-lg-7 col-sm-12 col-pad-0 align-self-center">
+                        <div class="login-inner-form">
+                            <div class="details">
+                                <h3>Sign In</h3>
+                                <form autocomplete="off">
+                                    <div class="form-group">
+                                        <input type="email" id="signInEmail" name="username" class="input-text" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" id="signInPassword" name="Password" class="input-text" placeholder="Password">
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" id="signInButton" class="btn-md btn-theme btn-block">Login Now</button>
+                                    </div>
+                                </form>
+                                <p>Don't you have an account yet?<a href="signup.html"> SignUp Now</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 col-sm-12 col-pad-0 bg-img align-self-center none-992">
+                        <a href="index.html" class="logoss">
+                            Logy<span>.</span>
+                        </a>
+                        <p>Step into the Future with logy: Elevating Reality through VR Treadmills and Software Solutions</p>
+                        <ul class="social-list clearfix">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Login end -->
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js";
+    import { getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-auth.js";
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyAAprUb4UC4yZUtcYoLswQwBpKTP2trgWE",
+        authDomain: "vrlogy-d176a.firebaseapp.com",
+        projectId: "vrlogy-d176a",
+        storageBucket: "vrlogy-d176a.appspot.com",
+        messagingSenderId: "715901168367",
+        appId: "1:715901168367:web:7696cbd2ccc4db73ba091a",
+        measurementId: "G-FZ04CB5YRC"
+    };
+    
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        const auth = getAuth();
+        document.getElementById('signInButton').addEventListener('click', (event) => {
+            event.preventDefault();
+            const email = document.getElementById('signInEmail').value;
+            const password = document.getElementById('signInPassword').value;
+
+            signInWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    // Signed in 
+                    const user = userCredential.user;
+                    console.log(userCredential);
+                    window.location.href = "index.html";
+                    // ...
+                })
+                .catch((error) => {
+                    console.log('로그인 실패');
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                });
+
+        });
+    </script>
+    <!-- Optional JavaScript -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/venobox.min.js"></script>
+    <script src="js/counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
